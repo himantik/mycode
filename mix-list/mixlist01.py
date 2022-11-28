@@ -19,8 +19,8 @@ print("IP addresses:", iplist[3], ", and", iplist[4])
 
 # example 3 - use an 'f-string'
 print(f"IP addresses: {iplist[3]}, and {iplist[4]}")
-:wq
-:wq
+
+
 
 
 
@@ -36,6 +36,4 @@ tlgstudents= ['Albert', 'Anthony', 'Brenden', 'Craig', 'Deja', 'Elihu', 'Eric', 
 wordbank.append(4)
 num= input("Pick a student number!")
 num= int(input("Pick a student number!"))
-choice= int(input("Pick a student number!"))
-student_name= tlgstudents[choice]
-
+num= int(input("Pick a student number!"))
