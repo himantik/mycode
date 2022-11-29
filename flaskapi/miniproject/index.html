@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+   <body>
+      <h1>Tasks</h1>
+
+      {% for task in tasks %}
+      <li> {{ task }} </li>
+      {% endfor %}
+
+      <form method="POST">
+          {{ template_form.hidden_tag() }}
+          <p>
+
+          {{ template_form.task.label }}
+          {{template_form.todo() }}
+
+          </p>
+          <p>
+
+          {{ template_form.submit() }}
+
+
+          </p>
+      </form>
+
+
+
+
+   </body>
+</html>
+
