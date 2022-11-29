@@ -1,0 +1,58 @@
+#!/bin/evn/ python3
+
+print("Welcome to my quiz, Let's see if you know the capital of these States!")
+
+playing = input("Are you ready to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let's play :)")
+score = 0
+
+answer = input("What is the capital of Washington? ")
+if answer.lower() == "olympia":
+    print("You're right!")
+    score += 1
+else:
+    print("Don't give up!")
+    
+answer = input("What is the capital of Wiscounsin? ")
+if answer.lower() == "madison":
+    print('Hooray!')
+    score += 1
+else:
+    print("Incorrect!")
+    
+answer = input("What is the capital of Pennylsvania? ")
+
+if answer.lower() == "harrisburg":
+    print('Correct!')
+    score += 1
+else:
+    print("Try again!")
+
+answer = input("What is the capital of Kentucky? ")
+if answer.lower() == "frankfort":
+    print('You got it!')
+    score += 1
+else:
+    print("Not my day!")
+
+answer = input("What is the capital of California? ")
+if answer.lower() == "sacramento":
+    print('Awesome!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What is the capital of New York? ")
+if answer.lower() == "albany":
+    print('Good Job!')
+    score += 1
+else:
+    print("Incorrect!")
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score / 6) * 100) + "%.")
+
