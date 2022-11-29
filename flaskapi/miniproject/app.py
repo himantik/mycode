@@ -9,7 +9,7 @@ tasks = ["Make miniproject for Flask", "Finish all assignments", "Build a task a
 
 class TaskForm(FlaskForm):
     task = StringField("Task")
-    submit = SubmitField("Add Todo")
+    submit = SubmitField("Add Task")
 
 @app.route('/', methods=["GET", "POST"])
 def index():
@@ -18,7 +18,8 @@ def index():
 
     return render_template('index.html', tasks=tasks, template_form=TaskForm()) 
 
-
+#URL= "http://127.0.0.1:2224/map#
+#pprint(requests.get(URL).json())#
 
 
 if __name__ == "__main__":
